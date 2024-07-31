@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team and Player Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 8px;
+            box-sizing: border-box;
+        }
+        textarea {
+            width: 100%;
+            height: 80px;
+            padding: 8px;
+            margin-top: 8px;
+            resize: none;
+            box-sizing: border-box;
+        }
+        .response {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Team and Player Management</h1>
+    <div class="container">
+        <h2>Add New Team</h2>
+        <input type="text" id="teamName" placeholder="Team Name">
+        <input id="sport" placeholder="Sport">
+        <input id="average_Age" placeholder="Average_age">
+        <button onclick="addTeam()">Add Team</button>
+
+        <h2>Add New Player</h2>
+        <input type="text" id="playerName" placeholder="Player Name">
+        <input type="text" id="playerTeamId" placeholder="Team ID">
+        <input type="text" id="playerSurName" placeholder="Player Surname">
+        <input type="date" id="playerDOB" placeholder="Player D.O.B">
+        <input type="text" id="playerNationality" placeholder="Nationality">
+        <!-- <input type="text" id="playerNationality" placeholder="Nationality"> -->
+        <button onclick="addPlayer()">Add Player</button>
+
+        <h2>Player Details</h2>
+        <input type="text" id="playerId" placeholder="Player ID">
+        <button onclick="getPlayerDetails()">Get Player Details</button>
+        <div id="playerDetails" class="response"></div>
+    </div>
+
+    <script src="interface.js"></script>
+
+</body>
+</html>
