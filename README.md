@@ -1,0 +1,1 @@
+This project is a web service designed to manage information about teams and their players for a chosen team-based sport. The service is implemented using PHP with MySQL for database management, using the PHP Data Objects (PDO) extension for database interactions. Additionally, a minimalistic user interface is provided for testing and interacting with the web service.
